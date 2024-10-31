@@ -1,0 +1,58 @@
+function printCurrentTime() {
+    const currentTime = new Date();
+    return currentTime.toLocaleTimeString();
+  }
+  
+  // Task 1: Invoke the printCurrentTime function inside a console.log()
+console.log(printCurrentTime());
+  
+  // Task 2: Write a function to print your name, then invoke it twice
+function printName() {
+    console.log("YourName"); 
+  }
+  
+  printName();
+  printName();
+  
+// Task 3: Write a function called `printGreeting`. When invoked using the examples
+// below, it should print "Hello Bob" or "Hello Sue":
+//
+// printGreeting("Bob") // This should print "Hello Bob"
+// printGreeting("Sue") // This should print "Hello Sue"
+function printGreeting(name) {
+    console.log("Hello " + name);
+  }
+  
+printGreeting("Bob");
+printGreeting("Sue");
+  
+// Task 4: Write a function called `multiply` which multiplies two numbers together and returns the value
+// so that it can be stored in a variable. See the example below to see how it should work.
+//
+// const first = multiply(2, 2)
+// console.log(first) // this should print "4"
+//
+// const second = multiply(100, 4)
+// console.log(second) // this should print "400"
+function multiply(num1, num2) {
+    return num1 * num2;
+  }
+  
+const first = multiply(2, 2)
+console.log(first); 
+  
+const second = multiply(100, 4);
+console.log(second); 
+  
+// Task 5: Write a function called `warmEnough` which takes the current temperature as an argument and returns
+// `true` if it is greater than 10 and false otherwise. Comment out the code below to invoke the
+// function. It should print "Go for a run!"
+function warmEnough(currentTemperature) {
+    return currentTemperature > 10;
+  }
+  
+  
+if (warmEnough(15)) {
+    console.log("Go for a run!");
+  }
+  
